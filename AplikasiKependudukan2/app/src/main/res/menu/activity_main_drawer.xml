@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_halaman_utama"
+            android:title="@string/halaman_utama" />
+        <item
+            android:id="@+id/nav_tambah_penduduk"
+            android:icon="@drawable/ic_tambah_penduduk"
+            android:title="@string/tambah_penduduk" />
+        <item
+            android:id="@+id/nav_tampil_penduduk"
+            android:icon="@drawable/ic_tampil_penduduk"
+            android:title="@string/tampil_penduduk" />
+    </group>
+</menu>

@@ -1,0 +1,308 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fillViewport="true"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EDIT PENDUDUK"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textColor="@color/design_default_color_primary" />
+
+        <EditText
+            android:id="@+id/eNIK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/NIK"
+            android:inputType="number"
+            android:maxLength="16"
+            android:paddingTop="12dp"
+            android:textAppearance="@android:style/TextAppearance.Material" />
+
+        <EditText
+            android:id="@+id/eNamaPenduduk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nama_penduduk"
+            android:inputType="textCapCharacters"
+            android:textAppearance="@android:style/TextAppearance.Material" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="2dp"
+            android:addStatesFromChildren="true"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/jen_kel"
+                android:textAlignment="viewStart"
+                android:textAppearance="@android:style/TextAppearance.Material"
+                tools:ignore="RtlCompat" />
+
+            <RadioGroup
+                android:id="@+id/rbJenKel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:addStatesFromChildren="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbLaki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/laki_laki" />
+
+                <RadioButton
+                    android:id="@+id/rbPerempuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/perempuan" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/eTmptLahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tmpt_lahir"
+            android:inputType="text"
+            android:textAppearance="@android:style/TextAppearance.Material" />
+
+        <EditText
+            android:id="@+id/eTglLahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="@string/tgl_lahir"
+            android:inputType="text"
+            android:textAppearance="@android:style/TextAppearance.Material" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="2dp"
+            android:addStatesFromChildren="true"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/eAgama"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:labelFor="@id/spinner_agama"
+                android:padding="1dp"
+                android:text="AGAMA"
+                android:textAlignment="viewStart"
+                android:textAppearance="@android:style/TextAppearance.Material"
+                tools:ignore="RtlCompat" />
+
+            <Spinner
+                android:id="@+id/spinner_agama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/ePendidikan"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:labelFor="@id/spinner_pendidikan"
+                android:text="@string/jenjang_pendidikan"
+                android:textAlignment="viewStart"
+                android:textAppearance="@android:style/TextAppearance.Material"
+                tools:ignore="RtlCompat" />
+
+            <Spinner
+                android:id="@+id/spinner_pendidikan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ePekerjaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pekerjaan"
+            android:inputType="text"
+            android:textAppearance="@android:style/TextAppearance.Material" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="2dp"
+            android:addStatesFromChildren="true"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/eStatusPerkawinan"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:labelFor="@id/spinner_status_perkawinan"
+                android:text="STATUS PERKAWINAN"
+                android:textAlignment="viewStart"
+                android:textAppearance="@android:style/TextAppearance.Material"
+                tools:ignore="RtlCompat" />
+
+            <Spinner
+                android:id="@+id/spinner_status_perkawinan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="2dp"
+            android:addStatesFromChildren="true"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/eKewarganegaraan"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:labelFor="@id/spinner_kewarganegaraan"
+                android:text="KEWARGANEGARAAN"
+                android:textAlignment="viewStart"
+                android:textAppearance="@android:style/TextAppearance.Material"
+                tools:ignore="RtlCompat" />
+
+            <Spinner
+                android:id="@+id/spinner_kewarganegaraan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/eProvinsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/provinsi"
+            android:inputType="text"
+            android:textAppearance="@android:style/TextAppearance.Material" />
+
+        <EditText
+            android:id="@+id/eKodePos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/kode_pos"
+            android:inputType="numberSigned"
+            android:textAppearance="@android:style/TextAppearance.Material" />
+
+        <EditText
+            android:id="@+id/eKabupatenKota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/kabupaten_kota"
+            android:inputType="text"
+            android:textAppearance="@android:style/TextAppearance.Material" />
+
+        <EditText
+            android:id="@+id/eKecamatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/kecamatan"
+            android:inputType="text"
+            android:textAppearance="@android:style/TextAppearance.Material" />
+
+        <EditText
+            android:id="@+id/eDesaKelurahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/desa_kelurahan"
+            android:inputType="text"
+            android:textAppearance="@android:style/TextAppearance.Material" />
+
+        <EditText
+            android:id="@+id/eRT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/rt"
+            android:inputType="numberSigned"
+            android:textAppearance="@android:style/TextAppearance.Material" />
+
+        <EditText
+            android:id="@+id/eRW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/rw"
+            android:inputType="numberSigned"
+            android:textAppearance="@android:style/TextAppearance.Material" />
+
+        <EditText
+            android:id="@+id/eAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/alamat"
+            android:inputType="text"
+            android:textAppearance="@android:style/TextAppearance.Material" />
+    </LinearLayout>
+ </ScrollView>

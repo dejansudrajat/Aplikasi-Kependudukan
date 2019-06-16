@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Aplikasi Kependudukan</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Keluar</string>
+
+    <string name="camera_fragment">Camera Fragment</string>
+    <string name="gallery_fragment">Gallery Fragment</string>
+    <string name="slide_show_fragment">Slide Show Fragment</string>
+    <string name="tools_fragment">ToolsFragment</string>
+    <string name="send_fragment">Send Fragment</string>
+    <string name="share_fragment">Share Fragment</string>
+
+    <string name="cheese_ipsum">Jarlsberg lancashire edam. Dolcelatte hard cheese brie st. agur blue
+    cheese caerphilly bavarian bergkase cheese and biscuits mascarpone. Cheeseburger swiss bavarian
+    bergkase cream cheese fromage frais cheesy feet port-salut airedale. St. agur blue cheese rubber
+    cheese caerphilly cheddar cheesecake cream cheese manchego lancashire. Roquefort squirty cheese
+    the big cheese.</string>
+    <string name="checkin">Checkin</string>
+
+    <string name="menu_night_mode">Night mode</string>
+    <string name="menu_night_mode_system">Follow system</string>
+    <string name="menu_night_mode_day">Day (always)</string>
+    <string name="menu_night_mode_night">Night (always)</string>
+    <string name="menu_night_mode_auto">Auto</string>
+    <string name="tambah_penduduk">Tambah Data</string>
+    <string name="tampil_penduduk">Tampil Data</string>
+    <string name="pencarian">Pencarian</string>
+    <string name="halaman_utama">Halaman Utama</string>
+
+    <!-- string value untuk data penduduk -->
+    <string name="NIK">NIK</string>
+    <string name="nama_penduduk">NAMA PENDUDUK</string>
+    <string name="jen_kel">JENIS KELAMIN</string>
+    <string name="tmpt_lahir">TEMPAT LAHIR</string>
+    <string name="tgl_lahir">TANGGAL LAHIR</string>
+    <string name="agama">AGAMA</string>
+    <string name="pendidikan">JENJANG PENDIDIKAN</string>
+    <string name="pekerjaan">PEKERJAAN</string>
+    <string name="status_perkawinan">STATUS PERKAWINAN</string>
+    <string name="kewarganegaraan">KEWARGANEGARAAN</string>
+    <string name="provinsi">PROVINSI</string>
+    <string name="kode_pos">KODE POS</string>
+    <string name="kabupaten_kota">KABUPATEN / KOTA</string>
+    <string name="kecamatan">KECAMATAN</string>
+    <string name="desa_kelurahan">DESA / KELURAHAN</string>
+    <string name="rt">RT</string>
+    <string name="rw">RW</string>
+    <string name="alamat">ALAMAT</string>
+    <!-- enum value -->
+    <string name="islam">Islam</string>
+    <string name="kristen">Kristen</string>
+    <string name="hindu">Hindu</string>
+    <string name="buddha">Buddha</string>
+    <string name="katolik">Katolik</string>
+    <string name="konghucu">Konghucu</string>
+    <string name="lain_lain">Lain-lain</string>
+    <string name="sd_sederajat">SD / SEDERAJAT</string>
+    <string name="smp_sederajat">SMP / SEDERAJAT</string>
+    <string name="slta_sederajat">SLTA / SEDERAJAT</string>
+    <string name="perguruan_tinggi">Perguruan Tinggi</string>
+    <string name="kawin">KAWIN</string>
+    <string name="belum_kawin">BELUM KAWIN</string>
+    <string name="cerai_hidup">CERAI HIDUP</string>
+    <string name="cerai_mati">CERAI MATI</string>
+    <string name="wni">WNI</string>
+    <string name="wna">WNA</string>
+    <string name="laki_laki">LAKI-LAKI</string>
+    <string name="perempuan">PEREMPUAN</string>
+    <string name="no_results">No Results</string>
+    <string name="jenjang_pendidikan">JENJANG PENDIDIKAN</string>
+
+    <string-array name="months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+</resources>
